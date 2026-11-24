@@ -1,144 +1,68 @@
-<h1 align="center">Madhav Thesiya</h1>
+<!-- MT / Engineering Atlas. All artwork is stored locally in assets/. -->
+![Madhav Thesiya — I build systems. Then I try to break them. B.Tech ICT, DAU, 2028. Open to Summer 2027 internships.](assets/identity.svg)
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=20&pause=1000&color=6366F1&center=true&vCenter=true&width=520&lines=Pre-Final+Year+%40+DAU+(ex+DA-IICT);Backend+Engineering+%7C+Distributed+Systems;Codeforces+Expert+%C2%B7+LeetCode+Knight;Java+%C2%B7+C%2B%2B+%C2%B7+Spring+Boot+%C2%B7+Redis+%C2%B7+Docker" alt="Typing SVG" />
-</p>
+[**Résumé ↗**](https://drive.google.com/file/d/1mKPEDM6XPiRPFPnKwPCZdZzkkjHU4xbu/view?usp=sharing) &nbsp; / &nbsp; [LinkedIn](https://www.linkedin.com/in/madhavthesiya) &nbsp; / &nbsp; [Email](mailto:202401226@dau.ac.in) &nbsp; / &nbsp; [Codeforces](https://codeforces.com/profile/madhavthesiya)
 
-<p align="center">
-  <a href="https://drive.google.com/file/d/1mKPEDM6XPiRPFPnKwPCZdZzkkjHU4xbu/view?usp=sharing"><img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Resume" /></a>
-  <a href="https://www.linkedin.com/in/madhavthesiya"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:202401226@dau.ac.in"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://codeforces.com/profile/madhavthesiya"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces" /></a>
-  <a href="https://leetcode.com/u/madhavthesiya/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
-  <a href="https://www.codechef.com/users/madhav_thesiya"><img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef" /></a>
-</p>
+I'm a third-year ICT undergraduate at **Dhirubhai Ambani University (formerly DA-IICT)**. I work on storage engines, concurrent backend services, network reliability and applied AI. I enjoy the part after the first working implementation: finding the bottleneck, testing the assumptions, and measuring the improvement.
 
----
+**Seeking Summer 2027 internships** in software engineering, systems, backend and applied AI.
 
-### About
+![Project atlas: Systems — Kosh, Resumable File Transfer, Trading Engine. Backend — SEVAK, ShunyaLink, DAU Programming Club. Applied AI — AURA, Adamant, ThreatLens.](assets/atlas.svg)
 
-Pre-final year B.Tech student in Information & Communication Technology at **Dhirubhai Ambani University**, Gandhinagar.
+<sub>Numbers in the atlas come from project-specific experiments or reported usage, not production SLAs. Details and limitations belong in the corresponding repositories.</sub>
 
-I build backend systems designed for real-world load — caches on the hot path, load-balanced containers, crash-safe persistence — and solve algorithmic problems competitively. Most recently I co-built **AURA**, my university's official AI assistant, now serving **2,000+ students**.
+## 01 / Systems
 
-📄 **[View my resume →](https://drive.google.com/file/d/1mKPEDM6XPiRPFPnKwPCZdZzkkjHU4xbu/view?usp=sharing)**
+**[Kosh ↗](https://github.com/madhavthesiya/kosh)** — C++17 · Storage engine · Individual  
+A RESP-compatible multicore in-memory data engine with thread-owned shards, epoll, cross-thread queues, AOF persistence and SIEVE/LRU eviction. **694k pipelined GET/s** in a four-worker, pipeline-depth-16 WSL2 benchmark.  
+*Next:* LoadLab, reproducible workloads and latency-tail analysis.
 
-💼 Open to **SDE / Backend internship** opportunities.
+**[Resumable File Transfer ↗](https://github.com/madhavthesiya/resumable-file-transfer)** — C11 · Networking · Team  
+Compared restart, resume and parallel TCP transfers under injected failures across three physical machines. **2.93M CRC-verified file receipts** with zero observed mismatches across **392 benchmark runs**. Uses session checkpoints and epoll.
 
----
+**Market-data & Trading Engine** — C++20 · Low latency · Planned  
+A matching engine and market-data replay project. Planned milestones include price-time order-book correctness, Nasdaq ITCH replay, profiling and simulated exchange connectivity. No performance claims until implemented and measured.
 
-### 🚀 Projects
+## 02 / Backend
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🧠 AURA</h4>
-      <p>DAU's official AI-powered university assistant, built with a team of 10 and serving <b>2,000+ users</b>. A 12-stage LangGraph RAG pipeline with hybrid dense + BM25 retrieval answers in <b>341ms</b>. A queue-aware load balancer cut vLLM p95 latency from <b>25s to 1.9s</b> under KV-cache saturation.</p>
-      <sub><b>Stack:</b> FastAPI · LangGraph · vLLM · Qdrant · Next.js · PostgreSQL · Redis</sub><br/><br/>
-      <a href="https://github.com/Aura-DAU/aura">Repository →</a>
-    </td>
-    <td width="50%" valign="top">
-      <h4>⚡ Mini-Redis</h4>
-      <p>Redis-compatible TCP server written from scratch in C++17 — <b>27 commands</b>, <b>610k req/s</b> with pipelining (35x over single-command), p99 under <b>1ms</b>. Crash-safe AOF persistence with zero data loss on recovery. Works with redis-cli and redis-benchmark.</p>
-      <sub><b>Stack:</b> C++17 · TCP/IP · RESP Protocol · I/O Multiplexing</sub><br/><br/>
-      <a href="https://github.com/madhavthesiya/mini-redis">Repository →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🔗 ShunyaLink</h4>
-      <p>URL shortener and bio-link platform with JWT/OAuth2 auth, Geo-IP analytics, and LLM-powered phishing detection. Redis entity caching brought p95 redirect latency from <b>90ms to 35ms</b>, eliminating all DB reads on the hot path. Runs on a load-balanced <b>11-container</b> Docker stack.</p>
-      <sub><b>Stack:</b> Java · Spring Boot · Next.js · PostgreSQL · Redis · Docker · Nginx · Azure</sub><br/><br/>
-      <a href="https://shunyalink.madhavv.me">Live ↗</a> · <a href="https://github.com/madhavthesiya/shunyalink">Repository →</a>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🛠️ SEVAK</h4>
-      <p>REST API for a hyperlocal service marketplace connecting gig workers with users — <b>23-table BCNF</b> PostgreSQL schema, materialized views, stored procedures for transactional booking workflows, and <b>21 paginated endpoints</b>. Deployed on DigitalOcean.</p>
-      <sub><b>Stack:</b> Java · Spring Boot · Spring JDBC · PostgreSQL · Docker</sub><br/><br/>
-      <a href="https://sevak.madhavv.me/swagger-ui.html">Live ↗</a> · <a href="https://github.com/madhavthesiya/sevak-api">Repository →</a>
-    </td>
-  </tr>
-</table>
+**[SEVAK ↗](https://github.com/madhavthesiya/sevak)** — Java · Spring Boot · PostgreSQL · Individual  
+A transactionally safe service marketplace. PostgreSQL exclusion constraints refused **216 clashing booking requests** in a 50-user load test; an advisory lock resolved a race-test deadlock. Materialized views cut the home-page query from **2,334 to 8 ms** on one million generated bookings. [Live demo](https://sevak-tau.vercel.app)
+
+**[ShunyaLink ↗](https://github.com/madhavthesiya/shunyalink)** — Java · Redis · PostgreSQL · Individual  
+Link and bio-profile management with cached redirects, analytics, rate limiting and AI-assisted phishing checks. Local p95 redirect latency fell from **90.5 to 34.9 ms**. [Live demo](https://shunyalink.madhavv.me)  
+*Next:* continuous link-risk monitoring and bounded AI investigation.
+
+**DAU Programming Club Platform** — Java · Spring Boot · Next.js · Team lead  
+Led a six-member team building a platform used by **140+ students**. Batched Codeforces-history upserts reduced median import time from **5.3 s to 0.39 s** for 1,500 solves across five runs. Built topic-based problem recommendations and contest-history synchronization.
+
+## 03 / Applied AI
+
+**[AURA ↗](https://github.com/Aura-DAU/aura)** — Python · LangGraph · RAG · Team  
+DAU's university AI assistant, combining hybrid dense/BM25 retrieval, role-aware document and ERP access, persistent conversations and evaluation tooling.  
+*Current investigation:* an offline retrieval diagnostic is complete; the next step is validating reranker reliability. Section-aware retrieval remains conditional, and offline preference optimization is an optional research direction, subject to approval.
+
+**Adamant** — AI-assisted CI · Team  
+A self-healing CI project focused on reproducible failures, sandboxed verification, SHA checks and policy-controlled merging. The goal is verified repairs rather than trusting generated patches.
+
+**[ThreatLens ↗](https://github.com/Shane07p/ThreatLens)** — Graph retrieval · Cyber threat intelligence · In development / team  
+Building an evidence-grounded threat intelligence assistant around MITRE ATT&CK and CVE data. Planned evaluation compares hybrid retrieval, bounded graph traversal and reranking, with leakage checks and traceable evidence. Graph retrieval experiments are ongoing, not finished results.
 
 ---
 
-### 🏆 Competitive Programming
+## Outside the repositories
 
-| Platform | Handle | Rating | Best Performance |
-|:---------|:-------|:-------|:-----------------|
-| Codeforces | [madhavthesiya](https://codeforces.com/profile/madhavthesiya) | **Expert** · Peak 1709 · Top 750 in India | Round 1054 — Rank **251** / 19k+ |
-| LeetCode | [madhavthesiya](https://leetcode.com/u/madhavthesiya/) | **Knight** · Peak 2041 · Top 1.9% | Weekly 501 — Rank **363** / 27k+ |
-| CodeChef | [madhav_thesiya](https://www.codechef.com/users/madhav_thesiya) | **4 Star** · Peak 1826 | |
+| Competitive programming | Peak / result |
+| :--- | :--- |
+| [Codeforces](https://codeforces.com/profile/madhavthesiya) | **Expert · 1709** · Round 1054 global rank 251 |
+| [LeetCode](https://leetcode.com/u/madhavthesiya/) | **Knight · 2041** · Top 1.9% |
+| [CodeChef](https://www.codechef.com/users/madhav_thesiya) | **4-star · 1826** |
+| ICPC India 2026 | **562 / 4,055 teams** · Online Preliminary |
 
-<p align="center"><b>2000+</b> problems solved across platforms</p>
+**Community:** Led development at the DAU Programming Club; founding member of the DAU Quant Club, whose orientation and first session drew 180+ attendees.
 
----
-
-### 🛠️ Tech Stack
-
-**Languages**
-
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="35" alt="C" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="35" alt="C++" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="35" alt="Java" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="35" alt="Python" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="35" alt="TypeScript" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="35" alt="JavaScript" />
-</p>
-
-**Frameworks & Databases**
-
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="35" alt="Spring Boot" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="35" alt="FastAPI" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="35" alt="React" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="35" alt="PostgreSQL" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="35" alt="Redis" />
-</p>
-
-**Tools & Platforms**
-
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="35" alt="Docker" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" height="35" alt="Nginx" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" height="35" alt="GitHub Actions" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" height="35" alt="Prometheus" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" height="35" alt="Azure" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="35" alt="Linux" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="35" alt="Git" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" height="35" alt="CMake" />
-</p>
+**Toolkit:** C++, C, Java, Python, SQL, TypeScript · Linux, epoll, sockets, concurrency · Spring Boot, FastAPI, PostgreSQL, Redis · LangGraph, hybrid retrieval, AI evaluation · Docker, CMake, Git, GitHub Actions, k6, Nginx · React, Next.js.
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=madhavthesiya&show_icons=true&theme=dark&hide_border=true&count_private=true" width="48%" alt="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com/?user=madhavthesiya&theme=dark&hide_border=true" width="48%" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=madhavthesiya&layout=compact&theme=dark&hide_border=true&count_private=true" width="48%" alt="Top Languages" />
-</p>
-
----
-
-<p align="center"><i>Building systems that scale · Solving problems that matter</i></p>
+<sub>MT / ENGINEERING ATLAS</sub>  
+**Correctness first. Performance measured. Assumptions documented.**
