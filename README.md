@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://drive.google.com/file/d/1mKPEDM6XPiRPFPnKwPCZdZzkkjHU4xbu/view?usp=sharing"><b>Résumé</b></a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/madhavthesiya">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="mailto:202401226@dau.ac.in">Email</a> &nbsp;·&nbsp;
+  <a href="mailto:madhavthesiya07@gmail.com">Email</a> &nbsp;·&nbsp;
   <a href="https://codeforces.com/profile/madhavthesiya">Codeforces</a> &nbsp;·&nbsp;
   <a href="https://leetcode.com/u/madhavthesiya/">LeetCode</a> &nbsp;·&nbsp;
   <a href="https://www.codechef.com/users/madhav_thesiya">CodeChef</a>
@@ -31,7 +31,7 @@ Shard-per-core RESP2/RESP3 in-memory engine (formerly Mini-Redis) with `epoll`, 
 </picture>
 
 **[SEVAK](https://github.com/madhavthesiya/sevak)** · [Live demo](https://sevak-tau.vercel.app) &nbsp;<sub>Java · Spring Boot · PostgreSQL · React · Individual</sub>  
-Marketplace enforcing booking invariants in PostgreSQL via GiST constraints (**216 clashes** refused), advisory locks, and 16-table RLS; materialized views cut home queries from **2,334 ms to 8 ms** on **1M bookings** (**271** tests).
+Marketplace enforcing PostgreSQL invariants via GiST constraints (**216 clashes** refused), advisory locks, and 16-table RLS; materialized views cut home queries **2,334 → 8 ms** on **1M bookings** (271 tests).
 <br clear="left">
 
 <picture>
@@ -48,8 +48,8 @@ Fault-tolerant TCP file distribution across three physical machines with atomic 
   <img align="left" width="60" height="52" alt="" src="assets/icon-aura-light.svg">
 </picture>
 
-**[AURA](https://github.com/Aura-DAU/aura)** &nbsp;<sub>Python · LangGraph · vLLM · Qdrant · Team</sub>  
-DAU's official AI assistant combining hybrid dense/BM25 RAG, role-aware ERP/document authorization, vLLM routing, and evaluation tooling. *Ongoing:* retrieval reliability validation; *conditional:* offline DPO/LoRA research.
+**[AURA](https://github.com/Aura-DAU/aura)** &nbsp;<sub>Python · LangGraph · Groq · PostgreSQL · Qdrant · Team</sub>  
+University AI assistant serving **2,000+ students** via a **13-node** LangGraph RAG pipeline, **12-role** RBAC, and hybrid dense/BM25 retrieval (**7 → 2 LLM calls**). *Ongoing:* retrieval validation; *conditional:* DPO/LoRA.
 <br clear="left">
 
 ## Other Tracks
@@ -60,8 +60,8 @@ Link platform with Redis Hash caching, analytics, JWT/OAuth2 auth, and 3-node lo
 **[DAU Programming Club Platform](https://github.com/ProgrammingClub-DAU/website)** · [Live site](https://programmingclubdau.vercel.app) &nbsp;<sub>Java · Spring Boot · PostgreSQL · Next.js · Team lead (6)</sub>  
 Club platform serving **140+ students** with CP analytics and topic recommendations; batched upserts cut Codeforces imports from **5.3 s to 0.39 s**.
 
-**Adamant** &nbsp;<sub>AI-assisted CI · Team</sub>  
-CI automation project for AI-assisted failure diagnosis, sandboxed verification, and policy-controlled remediation.
+**Adamant** &nbsp;<sub>TypeScript · Node.js · PostgreSQL · Docker · GitHub Actions · Team</sub>  
+Self-healing CI agent enforcing a 15-rule diff policy, offline Docker step replay, and SHA-pinned merge gates so fixes pass the exact failing CI step.
 
 **[ThreatLens](https://github.com/Shane07p/ThreatLens)** &nbsp;<sub>Python · GraphRAG · PostgreSQL + pgvector · LangGraph · Team · In development</sub>  
 GraphRAG cyber threat intelligence assistant over MITRE ATT&CK and NVD CVEs; graph ingestion built, retrieval evaluation in progress.
@@ -76,9 +76,10 @@ Planned matching engine, Nasdaq ITCH replay, networking, latency profiling, and 
   <img alt="Codeforces Expert 1709 (Round 1054 rank 251), LeetCode Knight 2041 (Top 1.9%), CodeChef 4-Star 1826, ICPC India 2026 Rank 562 / 4,055 teams" src="assets/credentials-light.svg" width="100%">
 </picture>
 
-Led engineering at the **DAU Programming Club** · Founding member of the **DAU Quant Club** (first session drew **180+ attendees**).
-
-**Core stack:** C++17/20, C11, Java, Python, SQL, TypeScript · Linux, epoll, POSIX sockets, concurrency · Spring Boot, FastAPI, PostgreSQL, Redis, Nginx · LangGraph, vLLM, Qdrant, pgvector, Docker, Next.js.
+**Systems & Low-Latency:** C++17/20 · C11 · Linux · epoll · POSIX sockets · concurrency · CMake  
+**Backend & Storage:** Java · Spring Boot · FastAPI · PostgreSQL · Redis · Nginx  
+**Applied AI & Retrieval:** Python · LangGraph · vLLM · Qdrant · pgvector · hybrid retrieval · GraphRAG  
+**Infra & Web:** Docker · Git · GitHub Actions · k6 · TypeScript · React · Next.js
 
 <br>
 
