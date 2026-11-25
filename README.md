@@ -1,68 +1,95 @@
-<!-- MT / Engineering Atlas. All artwork is stored locally in assets/. -->
-![Madhav Thesiya — I build systems. Then I try to break them. B.Tech ICT, DAU, 2028. Open to Summer 2027 internships.](assets/identity.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img alt="Madhav Thesiya: Systems, Backend, Quant / Low-Latency, and Applied AI" src="assets/hero-light.svg" width="100%">
+</picture>
 
-[**Résumé ↗**](https://drive.google.com/file/d/1mKPEDM6XPiRPFPnKwPCZdZzkkjHU4xbu/view?usp=sharing) &nbsp; / &nbsp; [LinkedIn](https://www.linkedin.com/in/madhavthesiya) &nbsp; / &nbsp; [Email](mailto:202401226@dau.ac.in) &nbsp; / &nbsp; [Codeforces](https://codeforces.com/profile/madhavthesiya)
+<p align="center">
+  <a href="https://drive.google.com/file/d/1mKPEDM6XPiRPFPnKwPCZdZzkkjHU4xbu/view?usp=sharing"><b>Résumé</b></a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/madhavthesiya">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:202401226@dau.ac.in">Email</a> &nbsp;·&nbsp;
+  <a href="https://codeforces.com/profile/madhavthesiya">Codeforces</a> &nbsp;·&nbsp;
+  <a href="https://leetcode.com/u/madhavthesiya/">LeetCode</a> &nbsp;·&nbsp;
+  <a href="https://www.codechef.com/users/madhav_thesiya">CodeChef</a>
+</p>
 
-I'm a third-year ICT undergraduate at **Dhirubhai Ambani University (formerly DA-IICT)**. I work on storage engines, concurrent backend services, network reliability and applied AI. I enjoy the part after the first working implementation: finding the bottleneck, testing the assumptions, and measuring the improvement.
+Building storage engines, fault-tolerant networking, transactionally sound backends, and retrieval-grounded AI systems.
 
-**Seeking Summer 2027 internships** in software engineering, systems, backend and applied AI.
+## Featured Work
 
-![Project atlas: Systems — Kosh, Resumable File Transfer, Trading Engine. Backend — SEVAK, ShunyaLink, DAU Programming Club. Applied AI — AURA, Adamant, ThreatLens.](assets/atlas.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/icon-kosh-dark.svg">
+  <img align="left" width="60" height="52" alt="" src="assets/icon-kosh-light.svg">
+</picture>
 
-<sub>Numbers in the atlas come from project-specific experiments or reported usage, not production SLAs. Details and limitations belong in the corresponding repositories.</sub>
+**[Kosh](https://github.com/madhavthesiya/kosh)** &nbsp;<sub>C++17 · Storage engine · Individual</sub>  
+Shard-per-core RESP2/RESP3 in-memory engine (formerly Mini-Redis) with `epoll`, AOF persistence, and SIEVE/LRU eviction: **694k pipelined GET/s** (4 threads, WSL2; 1.4× Redis 8), **113 B/key**; *LoadLab planned*.
+<br clear="left">
 
-## 01 / Systems
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/icon-sevak-dark.svg">
+  <img align="left" width="60" height="52" alt="" src="assets/icon-sevak-light.svg">
+</picture>
 
-**[Kosh ↗](https://github.com/madhavthesiya/kosh)** — C++17 · Storage engine · Individual  
-A RESP-compatible multicore in-memory data engine with thread-owned shards, epoll, cross-thread queues, AOF persistence and SIEVE/LRU eviction. **694k pipelined GET/s** in a four-worker, pipeline-depth-16 WSL2 benchmark.  
-*Next:* LoadLab, reproducible workloads and latency-tail analysis.
+**[SEVAK](https://github.com/madhavthesiya/sevak)** · [Live demo](https://sevak-tau.vercel.app) &nbsp;<sub>Java · Spring Boot · PostgreSQL · React · Individual</sub>  
+Marketplace enforcing booking invariants in PostgreSQL via GiST constraints (**216 clashes** refused), advisory locks, and 16-table RLS; materialized views cut home queries from **2,334 ms to 8 ms** on **1M bookings** (**271** tests).
+<br clear="left">
 
-**[Resumable File Transfer ↗](https://github.com/madhavthesiya/resumable-file-transfer)** — C11 · Networking · Team  
-Compared restart, resume and parallel TCP transfers under injected failures across three physical machines. **2.93M CRC-verified file receipts** with zero observed mismatches across **392 benchmark runs**. Uses session checkpoints and epoll.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/icon-rft-dark.svg">
+  <img align="left" width="60" height="52" alt="" src="assets/icon-rft-light.svg">
+</picture>
 
-**Market-data & Trading Engine** — C++20 · Low latency · Planned  
-A matching engine and market-data replay project. Planned milestones include price-time order-book correctness, Nasdaq ITCH replay, profiling and simulated exchange connectivity. No performance claims until implemented and measured.
+**[Resumable File Transfer](https://github.com/madhavthesiya/resumable-file-transfer)** &nbsp;<sub>C11 · POSIX · epoll · Team</sub>  
+Fault-tolerant TCP file distribution across three physical machines with atomic checkpoints and parallel streams. Cut fault traffic **20×**, scaled **5.33×**, and verified **2.93M+ CRC receipts with zero mismatches** across **392 runs**.
+<br clear="left">
 
-## 02 / Backend
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/icon-aura-dark.svg">
+  <img align="left" width="60" height="52" alt="" src="assets/icon-aura-light.svg">
+</picture>
 
-**[SEVAK ↗](https://github.com/madhavthesiya/sevak)** — Java · Spring Boot · PostgreSQL · Individual  
-A transactionally safe service marketplace. PostgreSQL exclusion constraints refused **216 clashing booking requests** in a 50-user load test; an advisory lock resolved a race-test deadlock. Materialized views cut the home-page query from **2,334 to 8 ms** on one million generated bookings. [Live demo](https://sevak-tau.vercel.app)
+**[AURA](https://github.com/Aura-DAU/aura)** &nbsp;<sub>Python · LangGraph · vLLM · Qdrant · Team</sub>  
+DAU's official AI assistant combining hybrid dense/BM25 RAG, role-aware ERP/document authorization, vLLM routing, and evaluation tooling. *Ongoing:* retrieval reliability validation; *conditional:* offline DPO/LoRA research.
+<br clear="left">
 
-**[ShunyaLink ↗](https://github.com/madhavthesiya/shunyalink)** — Java · Redis · PostgreSQL · Individual  
-Link and bio-profile management with cached redirects, analytics, rate limiting and AI-assisted phishing checks. Local p95 redirect latency fell from **90.5 to 34.9 ms**. [Live demo](https://shunyalink.madhavv.me)  
-*Next:* continuous link-risk monitoring and bounded AI investigation.
+## Other Tracks
 
-**DAU Programming Club Platform** — Java · Spring Boot · Next.js · Team lead  
-Led a six-member team building a platform used by **140+ students**. Batched Codeforces-history upserts reduced median import time from **5.3 s to 0.39 s** for 1,500 solves across five runs. Built topic-based problem recommendations and contest-history synchronization.
+**[ShunyaLink](https://github.com/madhavthesiya/shunyalink)** · [Live demo](https://shunyalink.madhavv.me) &nbsp;<sub>Java · Redis · PostgreSQL · Next.js · Nginx · Individual</sub>  
+Link platform with Redis Hash caching, analytics, JWT/OAuth2 auth, and 3-node load balancing (**90.5 ms → 34.9 ms** p95; **566 req/s**); *security-focused V2 planned*.
 
-## 03 / Applied AI
+**[DAU Programming Club Platform](https://github.com/ProgrammingClub-DAU/website)** · [Live site](https://programmingclubdau.vercel.app) &nbsp;<sub>Java · Spring Boot · PostgreSQL · Next.js · Team lead (6)</sub>  
+Club platform serving **140+ students** with CP analytics and topic recommendations; batched upserts cut Codeforces imports from **5.3 s to 0.39 s**.
 
-**[AURA ↗](https://github.com/Aura-DAU/aura)** — Python · LangGraph · RAG · Team  
-DAU's university AI assistant, combining hybrid dense/BM25 retrieval, role-aware document and ERP access, persistent conversations and evaluation tooling.  
-*Current investigation:* an offline retrieval diagnostic is complete; the next step is validating reranker reliability. Section-aware retrieval remains conditional, and offline preference optimization is an optional research direction, subject to approval.
+**Adamant** &nbsp;<sub>AI-assisted CI · Team</sub>  
+CI automation project for AI-assisted failure diagnosis, sandboxed verification, and policy-controlled remediation.
 
-**Adamant** — AI-assisted CI · Team  
-A self-healing CI project focused on reproducible failures, sandboxed verification, SHA checks and policy-controlled merging. The goal is verified repairs rather than trusting generated patches.
+**[ThreatLens](https://github.com/Shane07p/ThreatLens)** &nbsp;<sub>Python · GraphRAG · PostgreSQL + pgvector · LangGraph · Team · In development</sub>  
+GraphRAG cyber threat intelligence assistant over MITRE ATT&CK and NVD CVEs; graph ingestion built, retrieval evaluation in progress.
 
-**[ThreatLens ↗](https://github.com/Shane07p/ThreatLens)** — Graph retrieval · Cyber threat intelligence · In development / team  
-Building an evidence-grounded threat intelligence assistant around MITRE ATT&CK and CVE data. Planned evaluation compares hybrid retrieval, bounded graph traversal and reranking, with leakage checks and traceable evidence. Graph retrieval experiments are ongoing, not finished results.
+**HFT Trading Engine** &nbsp;<sub>C++20 · Low-latency · Individual · Planned</sub>  
+Planned matching engine, Nasdaq ITCH replay, networking, latency profiling, and exchange simulation.
 
----
+## Competitive Programming & Stack
 
-## Outside the repositories
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/credentials-dark.svg">
+  <img alt="Codeforces Expert 1709 (Round 1054 rank 251), LeetCode Knight 2041 (Top 1.9%), CodeChef 4-Star 1826, ICPC India 2026 Rank 562 / 4,055 teams" src="assets/credentials-light.svg" width="100%">
+</picture>
 
-| Competitive programming | Peak / result |
-| :--- | :--- |
-| [Codeforces](https://codeforces.com/profile/madhavthesiya) | **Expert · 1709** · Round 1054 global rank 251 |
-| [LeetCode](https://leetcode.com/u/madhavthesiya/) | **Knight · 2041** · Top 1.9% |
-| [CodeChef](https://www.codechef.com/users/madhav_thesiya) | **4-star · 1826** |
-| ICPC India 2026 | **562 / 4,055 teams** · Online Preliminary |
+Led engineering at the **DAU Programming Club** · Founding member of the **DAU Quant Club** (first session drew **180+ attendees**).
 
-**Community:** Led development at the DAU Programming Club; founding member of the DAU Quant Club, whose orientation and first session drew 180+ attendees.
+**Core stack:** C++17/20, C11, Java, Python, SQL, TypeScript · Linux, epoll, POSIX sockets, concurrency · Spring Boot, FastAPI, PostgreSQL, Redis, Nginx · LangGraph, vLLM, Qdrant, pgvector, Docker, Next.js.
 
-**Toolkit:** C++, C, Java, Python, SQL, TypeScript · Linux, epoll, sockets, concurrency · Spring Boot, FastAPI, PostgreSQL, Redis · LangGraph, hybrid retrieval, AI evaluation · Docker, CMake, Git, GitHub Actions, k6, Nginx · React, Next.js.
+<br>
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+  <img alt="" src="assets/divider-light.svg" width="100%">
+</picture>
 
-<sub>MT / ENGINEERING ATLAS</sub>  
-**Correctness first. Performance measured. Assumptions documented.**
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/colophon-dark.svg">
+    <img alt="MT" src="assets/colophon-light.svg" width="22">
+  </picture>
+</div>

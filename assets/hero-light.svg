@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 212" width="760" height="212" role="img" aria-label="Madhav Thesiya: Systems, Backend, Quant and Applied AI">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAFBFB"/>
+      <stop offset="100%" stop-color="#EBF3F1"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FAFBFB" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#FAFBFB" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#EBF3F1" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect x="0.75" y="0.75" width="758.5" height="210.5" rx="14"/>
+    </clipPath>
+    <style>
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.42; transform: scale(0.8); }
+      }
+      @keyframes shimmerA {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.68; }
+      }
+      @keyframes shimmerB {
+        0%, 100% { opacity: 0.24; }
+        50% { opacity: 0.56; }
+      }
+      .live-dot { transform-box: fill-box; transform-origin: center; animation: pulseDot 3.2s ease-in-out infinite; }
+      .contour-accent-2 { animation: shimmerA 7s ease-in-out infinite; }
+      .contour-accent-5 { animation: shimmerB 9s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect x="0.75" y="0.75" width="758.5" height="210.5" rx="14" fill="url(#bg)"/>
+
+  <g clip-path="url(#clip)">
+    
+    <circle cx="640" cy="96" r="46" fill="none" stroke="#24292F" stroke-width="0.9" stroke-dasharray="none" opacity="0.13"/>
+    <circle cx="640" cy="96" r="82" fill="none" stroke="#186A5B" stroke-width="1.2" stroke-dasharray="4 5" opacity="0.35"/>
+    <circle cx="640" cy="96" r="118" fill="none" stroke="#24292F" stroke-width="0.9" stroke-dasharray="none" opacity="0.13"/>
+    <circle cx="640" cy="96" r="154" fill="none" stroke="#24292F" stroke-width="0.9" stroke-dasharray="4 5" opacity="0.13"/>
+    <path d="M395.0,27.0 L407.3,29.9 L419.7,32.0 L432.0,33.2 L444.3,33.7 L456.7,33.6 L469.0,33.1 L481.3,32.5 L493.7,31.8 L506.0,31.3 L518.3,31.0 L530.7,31.1 L543.0,31.4 L555.3,32.0 L567.7,32.7 L580.0,33.3 L592.3,33.7 L604.7,33.6 L617.0,32.9 L629.3,31.4 L641.7,29.1 L654.0,25.9 L666.3,21.9 L678.7,17.3 L691.0,12.2 L703.3,6.9 L715.7,1.7 L728.0,-3.0 L740.3,-7.1 L752.7,-10.3 L765.0,-12.3" fill="none" stroke="#24292F" stroke-width="1.05" opacity="0.16"/>
+    <path d="M405.0,57.9 L417.0,61.1 L429.0,63.2 L441.0,64.3 L453.0,64.5 L465.0,63.7 L477.0,62.4 L489.0,60.6 L501.0,58.7 L513.0,56.7 L525.0,54.9 L537.0,53.4 L549.0,52.3 L561.0,51.5 L573.0,51.1 L585.0,50.8 L597.0,50.5 L609.0,50.0 L621.0,49.2 L633.0,47.9 L645.0,46.0 L657.0,43.5 L669.0,40.3 L681.0,36.5 L693.0,32.4 L705.0,28.0 L717.0,23.8 L729.0,19.8 L741.0,16.5 L753.0,14.0 L765.0,12.7" fill="none" stroke="#24292F" stroke-width="1.05" opacity="0.16"/>
+    <path class="contour-accent-2" d="M415.0,87.9 L426.7,91.0 L438.3,93.0 L450.0,93.7 L461.7,93.3 L473.3,91.9 L485.0,89.6 L496.7,86.8 L508.3,83.5 L520.0,80.2 L531.7,77.0 L543.3,74.1 L555.0,71.7 L566.7,69.7 L578.3,68.2 L590.0,67.2 L601.7,66.4 L613.3,65.8 L625.0,65.1 L636.7,64.3 L648.3,63.1 L660.0,61.5 L671.7,59.4 L683.3,56.8 L695.0,53.9 L706.7,50.8 L718.3,47.7 L730.0,44.8 L741.7,42.4 L753.3,40.7 L765.0,40.0" fill="none" stroke="#186A5B" stroke-width="1.6" opacity="0.48"/>
+    <path d="M425.0,116.3 L436.3,119.1 L447.7,120.7 L459.0,121.0 L470.3,120.0 L481.7,117.8 L493.0,114.7 L504.3,110.8 L515.7,106.5 L527.0,102.0 L538.3,97.6 L549.7,93.5 L561.0,90.0 L572.3,87.0 L583.7,84.8 L595.0,83.2 L606.3,82.2 L617.7,81.7 L629.0,81.4 L640.3,81.2 L651.7,81.0 L663.0,80.5 L674.3,79.7 L685.7,78.6 L697.0,77.1 L708.3,75.4 L719.7,73.6 L731.0,71.9 L742.3,70.5 L753.7,69.7 L765.0,69.5" fill="none" stroke="#24292F" stroke-width="1.05" opacity="0.16"/>
+    <path d="M435.0,142.7 L446.0,145.0 L457.0,146.1 L468.0,145.8 L479.0,144.2 L490.0,141.4 L501.0,137.6 L512.0,132.9 L523.0,127.8 L534.0,122.4 L545.0,117.1 L556.0,112.1 L567.0,107.8 L578.0,104.2 L589.0,101.5 L600.0,99.7 L611.0,98.7 L622.0,98.4 L633.0,98.7 L644.0,99.4 L655.0,100.3 L666.0,101.1 L677.0,101.8 L688.0,102.2 L699.0,102.2 L710.0,102.0 L721.0,101.6 L732.0,101.0 L743.0,100.6 L754.0,100.4 L765.0,100.7" fill="none" stroke="#24292F" stroke-width="1.05" opacity="0.16"/>
+    <path class="contour-accent-5" d="M445.0,166.8 L455.7,168.5 L466.3,169.0 L477.0,168.2 L487.7,166.1 L498.3,162.9 L509.0,158.5 L519.7,153.4 L530.3,147.7 L541.0,141.8 L551.7,136.0 L562.3,130.5 L573.0,125.7 L583.7,121.9 L594.3,119.0 L605.0,117.2 L615.7,116.4 L626.3,116.6 L637.0,117.7 L647.7,119.3 L658.3,121.3 L669.0,123.5 L679.7,125.6 L690.3,127.5 L701.0,129.1 L711.7,130.3 L722.3,131.2 L733.0,131.7 L743.7,132.1 L754.3,132.5 L765.0,133.1" fill="none" stroke="#186A5B" stroke-width="1.6" opacity="0.48"/>
+    <path d="M455.0,188.6 L465.3,189.6 L475.7,189.5 L486.0,188.3 L496.3,186.0 L506.7,182.5 L517.0,178.0 L527.3,172.7 L537.7,166.9 L548.0,160.9 L558.3,154.9 L568.7,149.4 L579.0,144.5 L589.3,140.7 L599.7,137.9 L610.0,136.3 L620.3,136.0 L630.7,136.8 L641.0,138.6 L651.3,141.2 L661.7,144.4 L672.0,147.9 L682.3,151.3 L692.7,154.7 L703.0,157.6 L713.3,160.1 L723.7,162.1 L734.0,163.5 L744.3,164.6 L754.7,165.3 L765.0,165.9" fill="none" stroke="#24292F" stroke-width="1.05" opacity="0.16"/>
+    <path d="M465.0,208.2 L475.0,208.5 L485.0,208.0 L495.0,206.6 L505.0,204.2 L515.0,200.8 L525.0,196.5 L535.0,191.4 L545.0,185.9 L555.0,180.2 L565.0,174.5 L575.0,169.3 L585.0,164.7 L595.0,161.2 L605.0,158.8 L615.0,157.7 L625.0,157.8 L635.0,159.3 L645.0,161.9 L655.0,165.4 L665.0,169.5 L675.0,174.1 L685.0,178.7 L695.0,183.2 L705.0,187.3 L715.0,190.8 L725.0,193.6 L735.0,195.7 L745.0,197.1 L755.0,198.0 L765.0,198.4" fill="none" stroke="#24292F" stroke-width="1.05" opacity="0.16"/>
+    <line x1="569" y1="54" x2="640" y2="96" stroke="#186A5B" stroke-width="1.2" opacity="0.5"/>
+    <line x1="640" y1="96" x2="696" y2="138" stroke="#186A5B" stroke-width="1.2" opacity="0.5"/>
+    
+    <circle cx="569" cy="54" r="9.2" fill="none" stroke="#186A5B" stroke-width="1.2" opacity="0.45"/>
+    <circle cx="569" cy="54" r="4.2" fill="#186A5B"/>
+    <circle cx="640" cy="96" r="10.2" fill="none" stroke="#186A5B" stroke-width="1.2" opacity="0.45"/>
+    <circle cx="640" cy="96" r="5.2" fill="#186A5B"/>
+    
+    <circle cx="696" cy="138" r="3.8" fill="#186A5B"/>
+    <g stroke="#186A5B" stroke-width="1.2" opacity="0.5">
+      <line x1="726" y1="22" x2="736" y2="22"/>
+      <line x1="731" y1="17" x2="731" y2="27"/>
+    </g>
+  
+    <rect x="280" y="0" width="210" height="212" fill="url(#fade)"/>
+  </g>
+
+  <rect x="0.75" y="0.75" width="758.5" height="210.5" rx="14" fill="none" stroke="#D0D7DE" stroke-width="1.5"/>
+
+  <g transform="translate(28,28) scale(0.88)">
+    <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="11" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.5"/>
+    <polygon points="10,46 10,18 14.4,18 21.5,29.8 28.6,18 33,18 33,46 28.8,46 28.8,25.81 21.5,37.95 14.2,25.81 14.2,46" fill="#1F2328"/>
+    <polygon points="36.5,18 53.5,18 53.5,22.2 47.1,22.2 47.1,46 42.9,46 42.9,22.2 36.5,22.2" fill="#186A5B"/>
+  </g>
+
+  <text x="98" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="750" letter-spacing="-1.1" fill="#1F2328">Madhav Thesiya</text>
+  <rect x="28" y="96" width="40" height="3" rx="1.5" fill="#186A5B"/>
+  <text x="28" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18.5" font-weight="500" letter-spacing="-0.15" fill="#57606A">Systems · Backend · Quant / Low-Latency · Applied AI</text>
+
+  <line x1="28" y1="150" x2="732" y2="150" stroke="#D8DEE4" stroke-width="1"/>
+
+  <circle cx="37" cy="180" r="4.5" fill="#186A5B" class="live-dot"/>
+  <text x="51" y="185.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#1F2328">Summer 2027 Internships</text>
+  <text x="732" y="185.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#57606A">B.Tech ICT ’28 · DAU (ex DA-IICT)</text>
+</svg>

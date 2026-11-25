@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 56" width="60" height="52" role="img" aria-label="Resumable File Transfer">
+  <g transform="translate(0,3)">
+    <rect x="0.75" y="0.75" width="48.5" height="48.5" rx="10.5" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.5"/>
+    
+    <rect x="11" y="16" width="7" height="6" rx="1.5" fill="#1F2328"/>
+    <rect x="21" y="16" width="7" height="6" rx="1.5" fill="#1F2328"/>
+    <rect x="31" y="16" width="8" height="6" rx="1.5" fill="#186A5B"/>
+    <path d="M13,29 L35,29" stroke="#1F2328" stroke-width="1.8" stroke-linecap="round"/>
+    <polyline points="30,25 35,29 30,33" fill="none" stroke="#186A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="21" cy="29" r="2.6" fill="#186A5B"/>
+  
+  </g>
+</svg>
